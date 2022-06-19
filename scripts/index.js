@@ -22,10 +22,10 @@ do{
             i = x + 1;
             break;
         }
-        while ((price >= 3000) || (nameProduct == "ESC")){
+        while (price >= 3000){
             alert("Estás gastando mucho en un único producto");
             nameProduct = prompt("Digite otro producto");
             price = parseInt(prompt("Digite el precio del producto"));
         }
     }
-}while((nameProduct != "ESC") && (additionProducts < limit));
+}while((nameProduct != "ESC") || (additionProducts < limit));
